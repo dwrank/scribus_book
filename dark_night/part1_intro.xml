@@ -1,87 +1,129 @@
 <?xml version='1.0' encoding='utf-8'?>
 <chapter id="Intro">
 <block>
-<es font="b1">
-LIBRO PRIMERO
-</es>
-<en font="b1">
-BOOK THE FIRST
-</en>
+    <es font="b1">
+        LIBRO PRIMERO
+    </es>
+    <en font="b1">
+        BOOK THE FIRST
+    </en>
 </block>
 <block>
-<es font="b3">
-En que se trata de la noche del sentido.
-</es>
-<en font="b3">
-Which treats of the Night of Sense.
-</en>
+    <es font="b3">
+        En que se trata de la noche del sentido.
+    </es>
+    <en font="b3">
+        Which treats of the Night of Sense.
+    </en>
 </block>
 <block>
-<es font="b2">
-CANCIÓN 1ª
-</es>
-<en font="b2">
-STANZA THE FIRST
-</en>
+    <es font="b2">
+        CANCIÓN 1ª
+    </es>
+    <en font="b2">
+        STANZA THE FIRST
+    </en>
 </block>
 <block>
-<es font="i3">
-En una noche oscura, con ansias, en amores inflamada, ¡oh dichosa ventura!, salí sin ser notada estando ya mi casa sosegada.
-</es>
-<en font="i3">
-On a dark night, Kindled in love with yearnings—oh, happy chance!—
-I went forth without being observed, My house being now at rest.
-</en>
+    <es font="i3">
+        En una noche oscura, con ansias, en amores inflamada, ¡oh dichosa ventura!,
+        salí sin ser notada estando ya mi casa sosegada.
+    </es>
+    <en font="i3">
+        On a dark night, Kindled in love with yearnings—oh, happy chance!—
+        I went forth without being observed, My house being now at rest.
+    </en>
 </block>
 <block>
-<es font="b2">
-DECLARACIÓN
-</es>
-<en font="b2">
-EXPOSITION
-</en>
+    <es font="b2">
+        DECLARACIÓN
+    </es>
+    <en font="b2">
+        EXPOSITION
+    </en>
+</block>
+<block>
+    <notes>
+        <es>
+            cuenta el alma
+        </es>
+        <en>
+            the soul speaks [lit. counts]
+        </en>
+        <es>
+            tuvo en salir
+        </es>
+        <en>
+            it took to get out
+        </en>
+    </notes>
+    <es>
+        1. Cuenta el alma en esta primera canción el modo y manera que tuvo en salir,
+        según la afición, de sí y de todas las cosas, muriendo por verdadera mortificación
+        a todas ellas y a sí misma, para venir a vivir vida de amor dulce y sabrosa con Dios.
+    </es>
+    <en>
+        IN this first stanza the soul relates the way and manner which it followed in going forth,
+        as to its affection, from itself and from all things, and in dying to them all and to itself,
+        by means of true mortification,
+        in order to attain to living the sweet and delectable life of love with God;
+    </en>
 </block>
 <block>
 <es>
-1. Cuenta el alma en esta primera canción el modo y manera que tuvo en salir, según la afición, de sí y de todas las cosas, muriendo por verdadera mortificación a todas ellas y a sí misma, para venir a vivir vida de amor dulce y sabrosa con Dios. Y dice que este salir de sí y de todas las cosas fue una noche oscura, que aquí entiende por la contemplación purgativa, como después se dirá, la cual pasivamente causa en el alma la dicha negación de sí misma y de todas las cosas.
+        Y dice que este salir de sí y de todas las cosas fue una noche oscura,
+        que aquí entiende por la contemplación purgativa, como después se dirá,
+        la cual pasivamente causa en el alma la dicha negación de sí misma y de todas las cosas.
 </es>
 <en>
-IN this first stanza the soul relates the way and manner which it followed in going forth, as to its
-affection, from itself and from all things, and in dying to them all and to itself, by means of true
-mortification, in order to attain to living the sweet and delectable life of love with God; and it says
-that this going forth from itself and from all things was a ‘dark night,’ by which, as will be explained
-hereafter, is here understood purgative contemplation, which causes passively in the soul the
-negation of itself and of all things referred to above.
+        and it says that this going forth from itself and from all things was a ‘dark night,’
+        by which, as will be explained hereafter, is here understood purgative contemplation,
+        which causes passively in the soul the negation of itself and of all things referred to above.
 </en>
 </block>
 <block>
-<es>
-2. Y esta salida dice ella aquí que pudo hacer con la fuerza y calor que para ello le dio el amor de su Esposo en la dicha contemplación oscura. En lo cual encarece la buena dicha que tuvo en caminar a Dios por esta noche con tan próspero suceso que ninguno de los tres enemigos, que son mundo, demonio y carne, que son los que siempre contrarían este camino, se lo pudiese impedir; por cuanto la dicha noche de contemplación purificativa hizo adormecer y amortiguar en la casa de su sensualidad todas las pasiones y apetitos según sus apetitos y movimientos contrarios. Dice, pues, el verso:
-</es>
-<en type="container">
-<text>
-2. And this going forth it says here that it was able to accomplish in the strength and ardour which
-love for its Spouse gave to it for that purpose in the dark contemplation aforementioned. Herein it
-extols the great happiness which it found in journeying to God through this night with such signal
-success that none of the three enemies, which are world, devil and flesh (who are they that ever
-impede this road), could hinder it; inasmuch as the aforementioned night of purgative
-</text>
-<text type="footnote">20</text>
-<text>
-contemplation lulled to sleep and mortified, in the house of its sensuality, all the passions and desires with respect
-to their mischievous desires and motions. The line, then, says:
-</text>
-<footnote id="20">
-[More exactly: ‘purificative.’]
-</footnote>
-</en>
+    <es>
+        2. Y esta salida dice ella aquí que pudo hacer con la fuerza y calor que para ello le dio el amor de su Esposo en la dicha contemplación oscura.
+    </es>
+    <en>
+        2. And this going forth it says here that it was able to accomplish in the strength and ardour which
+        love for its Spouse gave to it for that purpose in the dark contemplation aforementioned.
+    </en>
 </block>
 <block>
-<es font="b2">
-En una noche oscura.
-</es>
-<en font="b2">
-On a dark night
-</en>
+    <es>
+        En lo cual encarece la buena dicha que tuvo en caminar a Dios por esta noche con tan próspero suceso que ninguno de los tres enemigos, que son mundo, demonio y carne, que son los que siempre contrarían este camino, se lo pudiese impedir;
+    </es>
+    <en>
+        Herein it extols the great happiness which it found in journeying to God through this night with such signal
+        success that none of the three enemies, which are world, devil and flesh (who are they that ever
+        impede this road), could hinder it;
+    </en>
+</block>
+<block>
+    <es>
+        por cuanto la dicha noche de contemplación purificativa hizo adormecer y amortiguar en la casa de su sensualidad todas las pasiones y apetitos según sus apetitos y movimientos contrarios. Dice, pues, el verso:
+    </es>
+    <en type="container">
+        <text>
+            inasmuch as the aforementioned night of purgative
+        </text>
+        <text type="footnote">20</text>
+        <text>
+            contemplation lulled to sleep and mortified, in the house of its sensuality, all the passions and desires with respect
+            to their mischievous desires and motions. The line, then, says:
+        </text>
+        <footnote id="20">
+            [More exactly: ‘purificative.’]
+        </footnote>
+    </en>
+</block>
+<block>
+    <es font="b2">
+        En una noche oscura.
+    </es>
+    <en font="b2">
+        On a dark night
+    </en>
 </block>
 </chapter>

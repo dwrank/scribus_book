@@ -35,7 +35,12 @@ def create_super_script():
 
 
 def strip_text(text):
-    return text.replace('\n', ' ').strip()
+    s = ''
+    sp = ''
+    for line in text.strip().splitlines():
+        s += sp + line.strip()
+        sp = ' '
+    return s
 
 
 class FontSettings(object):
