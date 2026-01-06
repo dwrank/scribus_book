@@ -75,8 +75,10 @@ class ScribusBook(object):
                 'b1': FontSettings(FONT_GEORGIA_BOLD, 13),
                 'b2': FontSettings(FONT_GEORGIA_BOLD, 12),
                 'b3': FontSettings(FONT_GEORGIA_BOLD, 10),
+                'b4': FontSettings(FONT_GEORGIA_BOLD, 9),
                 'i3': FontSettings(FONT_GEORGIA_ITALIC, 10),
                 't3': FontSettings(FONT_GEORGIA_REGULAR, 10),
+                't4': FontSettings(FONT_GEORGIA_REGULAR, 9),
         }
 
         self.margins = [0.5604] * 4
@@ -96,6 +98,9 @@ class ScribusBook(object):
 
     def top_margin(self):
         return self.margins[0]
+
+    def get_note_fonts(self):
+        return self.fonts['b4'], self.fonts['t4']
 
     def get_font(self, xml):
         font = self.fonts['t3']
@@ -136,7 +141,7 @@ class ScribusBook(object):
         log(f'\nBlock:')
 
         note_h = 0
-        #_, note_h = self.create_notes(xml)
+        _, note_h = self.create_notes(xml)
         if note_h == 0:
             note_h = INIT_TEXT_FIELD_HEIGHT
         _, text_h = self.create_text(xml, note_h)
@@ -257,15 +262,15 @@ class ScribusBook(object):
         return pos + len(text)
 
     def create_notes(self, xml, init_height=INIT_TEXT_FIELD_HEIGHT):
-        xml_notes = xml.findall('note')
+        xml_notes = xml.findall('notes')
         eslist = []
         enlist = []
         for xml_note in xml_notes:
             eslist += xml_note.findall('es')
             enlist += xml_note.findall('en')
-        return self.create_note_field('Note', eslist, enlist, 'note', init_height)
+        return self.create_note_field(eslist, enlist, init_height)
 
-    def create_note_field(self, name, eslist, enlist, font_type, init_height):
+    def create_note_field(self, eslist, enlist, init_height):
         phrases = list(zip(eslist, enlist))
 
         pos = 0
@@ -273,39 +278,39 @@ class ScribusBook(object):
             has_text = False
             for i in range(len(phrases)):
                 es, en = phrases[i]
-                es = es.text.strip()
-                en = en.text.strip()
+                es = strip_text(es.text)
+                en = strip_text(en.text)
                 if es or en:
                     has_text = True
 
             if has_text:
                 T = scr.createText(self.note_x, self.y, self.note_width, init_height)
 
-                fonts = self.fonts[font_type]
+                fonts = self.get_note_fonts()
 
-                log(f'\n{name}:')
+                log(f'\nNotes:')
                 for i in range(len(phrases)):
                     if i != 0:
                         scr.insertText(f'\n\n', -1, T)
                         pos += 2
 
                     es, en = phrases[i]
-                    es = es.text.strip()
-                    en = en.text.strip()
+                    es = strip_text(es.text)
+                    en = strip_text(en.text)
 
                     log(f'es: {es}')
                     log(f'en: {en}')
 
                     scr.insertText(f'{es}\n', pos, T)
                     scr.selectText(pos, len(es), T)
-                    scr.setFont(fonts.font(0), T)
-                    scr.setFontSize(fonts.size(0), T)
+                    scr.setFont(fonts[0].name, T)
+                    scr.setFontSize(fonts[0].size, T)
                     pos += len(es) + 1
 
                     scr.insertText(f'{en}', pos, T)
                     scr.selectText(pos, len(en), T)
-                    scr.setFont(fonts.font(1), T)
-                    scr.setFontSize(fonts.size(1), T)
+                    scr.setFont(fonts[1].name, T)
+                    scr.setFontSize(fonts[1].size, T)
                     pos += len(en)
 
                 scr.insertText('\n ', -1, T)
